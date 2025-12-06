@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { useState } from 'react';
-import './EnquiryForm.css';
 
 const EnquiryForm = ({ productId, productName, onClose }) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });

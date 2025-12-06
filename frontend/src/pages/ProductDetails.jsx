@@ -29,7 +29,7 @@ const ProductDetails = () => {
     if (!product) return <p>Product not found</p>
 
     return (
-        <div className="products-details">
+        <div className="product-details">
             <Link to="/" className="back-link">&larr; Back to Products</Link>
             <div className="product-content">
                 <img src={product.image_url} alt={product.name} />
