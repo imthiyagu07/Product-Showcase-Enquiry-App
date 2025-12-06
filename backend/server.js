@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import productRoutes from "./routes/products.route.js";
+import enquiryRoutes from "./routes/enquiries.route.js";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/products', productRoutes);
+app.use('/api/enquiries', enquiryRoutes);
 
 app.get('/', (req, res) => {
     res.json({ message: 'API is running!'});
